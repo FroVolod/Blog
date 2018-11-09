@@ -9,11 +9,13 @@ from .utils import ObjectCreateMixin, ObjectDetailMixin
 
 
 def posts_list(request):
-    return render(request, 'blog/posts_list.html')
+    posts = Post.objects.all()
+    return render(request, 'blog/posts_list.html', context={'posts': posts})
 
 
 def tags_list(request):
-    return render(request, 'blog/tags_list.html')
+    tags = Tag.objects.all()
+    return render(request, 'blog/tags_list.html', context={'tags': tags})
 
 
 class PostCreate(ObjectCreateMixin, View):
