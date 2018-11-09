@@ -1,0 +1,10 @@
+.admin_panel {
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    opacity: 0.3;
+}
+
+.admin_panel:hover {
+    opacity: 1;
+}
