@@ -10,7 +10,7 @@
                 {{ field }}
             </div>
         {% endfor %}
-        <a href="{{ get_absolute_url }}" class="btn btn-success">Cancel</a>
+        <a href="{% url 'tags_list_url' %}" class="btn btn-success">Cancel</a>
         <button type="submit" class="btn btn-primary">Update</button>
     </form>
 {% endblock %}
